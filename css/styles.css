@@ -486,18 +486,25 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.port-item-imgbox {
+    position: relative;
+}
+
 .port-item-textbox {
     margin: 0;
     padding: 32px 0 32px 16px;
 }
 
-.port-item-noimg {
+.port-overlay {
     width: 360px;
     height: 300px;
     background: var(--clr-iris);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.port-noimg-text {
+.port-overlay-text {
     font-size: 16px;
     line-height: 1.5;
     color: var(--clr-cloud);
@@ -519,7 +526,31 @@ body {
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-btn {
     position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: var(--clr-cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.modal-box::before {
+    background-color: rgba(46, 47, 66, 0.4);
+    position: absolute;
+    width: 1440px;
+    height: 677px;
+    left: 0px;
+    top: 0px;
+    
 }
 
 
