@@ -145,6 +145,8 @@ body {
     letter-spacing: 0.02em;
     color: var(--clr-navy-blue);
     position: relative;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .current::after {
@@ -160,6 +162,7 @@ body {
 
 .nav-item:hover {
     color: var(--clr-iris);
+    
 }
 
 .nav-item:focus {
@@ -180,6 +183,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--clr-slate);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel-mail:hover,
@@ -253,6 +257,7 @@ body {
 
 .foot-sm-icon {
     fill: rgba(255, 255, 255, 0.1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-sm-icon:hover, 
@@ -319,6 +324,7 @@ body {
     padding: 16px 32px;
     margin: 48px 0 0 0;
     border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-btn:hover {
@@ -407,6 +413,7 @@ body {
     margin: 0;
     padding: 0;
     cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-card:hover, 
@@ -463,6 +470,7 @@ body {
     padding: 8px 16px;
     margin: 0;
     border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
@@ -479,6 +487,7 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     margin: 0;
     padding: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-item:hover, 
@@ -510,6 +519,7 @@ body {
     color: var(--clr-cloud);
     margin: 0;
     padding: 40px 32px;
+    opacity: 0;
 }
 
 
