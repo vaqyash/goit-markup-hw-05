@@ -528,7 +528,22 @@ body {
 
 /* --- Modal --- */
 
-.modal-box {
+.backdrop {
+    background-color: rgba(46, 47, 66, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: auto;
+}
+
+.modal {
     width: 408px;
     height: 576px;
     background-color: #FCFCFC;
@@ -536,11 +551,12 @@ body {
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 .close-btn {
     position: absolute;
@@ -548,20 +564,13 @@ body {
     right: 24px;
     background-color: var(--clr-cornflower);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    border-radius: 12px;
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
-.modal-box::before {
-    background-color: rgba(46, 47, 66, 0.4);
-    position: absolute;
-    width: 1440px;
-    height: 677px;
-    left: 0px;
-    top: 0px;
-    
-}
+
 
 
 
